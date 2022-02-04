@@ -1,39 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Source+Sans+Pro:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/f0652e315c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Login</title>
+    <title>W3Schools Online Web Tutorials</title>
   </head>
   <body>
-    <div class="main_div">
-      <div class="box">
-        <h1>Login Form</h1>
-        <form action="">
-          <div class="input-box">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fab fa-wikipedia-w"  style="color: green;  font-size: 3rem;"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+          <ul class="navbar-nav">
+            <li class="nav-item mx-2 dropdown dropdown-mega position-static"  >
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Tutorials</a>
+              <div class="w-100  dropdown-menu shadow ">
+                <div class="mega-content px-4 mx-5">
+                  <div class="container-fluid">
+                    <button type="button" class="btn btn-light float-end bg-dark border-0 mt-3 " style="box-sizing: content-box; " >
+                      <i class="fab fa-wikipedia-w"></i>
+                    </button>
+                    <div class="row"  style="background-color: #282A35;  color: white;">
+                      <h1   style="font-weight: 700; color: black;">Tutorials</h1>
+                      <div class="col-12 col-sm-4 col-md-3 py-4 ">
+                        <h3>HTML and CSS</h3>
+                        <ul >
+                          <li>
+                           <a class="mega" href="#">Learn HTML</a> </li>
+                           <li ><a   class="mega"  href="#">Learn CSS</a></li>
+                           <li ><a   class="mega"  href="#">Learm RWD</a></li>
+                           <li ><a   class="mega"  href="#">Learm Bootstrap</a></li>
+                           <li ><a   class="mega"  href="#">Learm W3.CSS</a></li>
+                           <li ><a   class="mega"  href="#">Learm Colors</a></li>
+                           <li ><a   class="mega"  href="#">Learm Icons</a></li>
+                           <li ><a   class="mega"  href="#">Learm Graphics</a></li>
+                           <li ><a   class="mega"  href="#">Learm SVG</a></li>
+                           <li ><a   class="mega"  href="#">Learm Canvas</a></li>
+                           <li ><a   class="mega"  href="#">Learm How To</a></li>
+                           <li ><a   class="mega"  href="#">Learm SASS</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-sm-4 col-md-3 py-4 ">
+                        <h3>JavaScript</h3>
+                        <ul>
+                          <li><a  class="mega"  href="">Learn JavaScript</a></li>
+                          <li><a  class="mega"  href="">Learn jQuery</a></li>
+                          <li><a  class="mega"  href="">Learn React</a></li>
+                          <li><a  class="mega"  href="">Learn AngularJS</a></li>
+                          <li><a  class="mega"  href="">Learn JSON</a></li>
+                          <li><a  class="mega"  href="">Learn AJAX</a></li>
+                          <li><a  class="mega"  href="">Learn AppML</a></li>
+                          <li><a  class="mega"  href="">Learn W3.JS</a></li>
+                        </ul>
+                        <h3>Programming</h3>
+                          <ul>
+                            <li><a  class="mega"  href="">Learn Python</a></li>
+                            <li><a  class="mega"  href="">Learn Java</a></li>
+                            <li><a  class="mega"  href="">Learn C++</a></li>
+                            <li><a  class="mega"  href="">Learn C#</a></li>
+                            <li><a  class="mega"  href="">Learn R</a></li>
+                            <li><a  class="mega"  href="">Learn Kotlin</a></li>
+                            <li><a  class="mega"  href="">Learn Go</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-12 col-sm-4 col-md-3 py-4">
+                        <h3>Server Side</h3>
+                          <ul  >
+                            <li><a  class="mega"  href="">Learn SQL</a></li>
+                            <li><a  class="mega"  href="">Learn MySQL</a></li>
+                            <li><a  class="mega"  href="">Learn PHP</a></li>
+                            <li><a  class="mega"  href="">Learn Node.js</a></li>
+                            <li><a  class="mega"  href="">Learn ASP</a></li>
+                            <li><a  class="mega"  href="">Learn Raspberry Pi</a></li>
+                            <li><a  class="mega"  href="">Learn Git</a></li>
+                            <li><a  class="mega"  href="">Learn AWS Cloud</a></li>
+                          </ul>
+                          <h3>Web Building</h3>
+                          <ul>
+                            <li><a  class="mega"  href="">Create Website</a></li>
+                            <li><a  class="mega"  href="">Where to start</a></li>
+                            <li><a  class="mega"  href="">Web Templates</a></li>
+                            <li><a  class="mega"  href="">Web Statistics</a></li>
+                            <li><a  class="mega"  href="">Web Certificates</a></li>
+                            <li><a  class="mega"  href="">Web Developments</a></li>
+                            <li><a  class="mega"  href="">Code Editor</a></li>
+                            <li><a  class="mega"  href="">Test your typing speed</a></li>
+                            <li><a  class="mega"  href="">Play a code game</a></li>
+                            <li><a  class="mega"  href="">Cyber Security</a></li>
+                            <li><a  class="mega"  href="">Accessibility</a></li>
+                          </ul>
+                          
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 py-4">
+                        <h3>Data Analytics</h3>
+                        <ul>
+                          <li><a  class="mega"  href="">Learn AI</a></li>
+                          <li><a  class="mega"  href="">Learn Machine Learning</a></li>
+                          <li><a  class="mega"  href="">Learn Data Science</a></li>
+                          <li><a  class="mega"  href="">Learn Numpy</a></li>
+                          <li><a  class="mega"  href="">Learn Pandas</a></li>
+                          <li><a  class="mega"  href="">Learn SciPy</a></li>
+                          <li><a  class="mega"  href="">Learn Matplotlib</a></li>
+                          <li><a  class="mega"  href="">Learn Statistics</a></li>
+                          <li><a  class="mega"  href="">Learn Excel</a></li>
+                          <li><a  class="mega"  href="">Learn Google Sheets</a></li>
+                        </ul>
+                        <h3>XML Tutorial</h3>
+                        <ul>
+                          <li><a  class="mega"  href="">Learn XML</a></li>
+                          <li><a  class="mega"  href="">Learn XML AJAX</a></li>
+                          <li><a  class="mega"  href="">Learn XML DOM</a></li>
+                          <li><a  class="mega"  href="">Learn XML DTD</a></li>
+                          <li><a  class="mega"  href="">Learn XML Schema</a></li>
+                          <li><a  class="mega"  href="">Learn XSLT</a></li>
+                          <li><a  class="mega"  href="">Learn XPath</a></li>
+                          <li><a  class="mega"  href="">Learn XQuery</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                References
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Exercises
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link">Videos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link">
+                <i class="fas fa-globe-europe nav-logo"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link">
+                <i class="fas fa-globe-europe nav-logo"></i>
+                  <path
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link">
+               
+                <i class="fas fa-search nav-logo"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              
+              <button type="button" class="btn btn-primary border-0 rounded-pill px-3 btn-lg bg-pink " style="color: #000; box-sizing: content-box; font-size: 15px;">
+                Website <span class="badge bg-light rounded-pill" style="color: #000;  ">NEW</span>
+              </button>
+            </li>
+            <li class="nav-item mx-2">
+              <button
+                type="button"
+                class="btn btn-lg btn-outline-success border-0 rounded-pill"
+                style="color: black; font-size: 15px;"
+              >
+                Paid Courses
+              </button>
+            </li>
+            <li class="nav-item mx-2">
+              <button
+                type="button"
+                class="btn btn-lg btn-success rounded-pill px-4"
+                style="box-sizing: content-box;font-size: 15px;"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div
+        class="text-center topsection"
+        
+      >
+        <div class="taglinecontainer">
+          <h1 class="headingone">
+            Learn to Code
+          </h1>
+          <h3 class="headingthree">
+            With the world's largest web developer site.
+          </h3>
+          <div class="input-group my-4 mx-auto" style="max-width: 500px">
             <input
               type="text"
-              name="Username"
-              id="name"
-              autocomplete="off"
-              required
+              class="form-control "
+              placeholder="Search our tutorials, e.g. HTML"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              
             />
-            <label for="Username">Username</label>
+            <button
+              class="btn btn-outline-secondary btn-success px-4"
+              type="button"
+              id="button-addon2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="#fff"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
           </div>
-          <div class="input-box">
-            <input
-              type="password"
-              name="password"
-              id="name"
-              autocomplete="off"
-              required
-            />
-            <label for="Password">Password</label>
+          <h4>
+            <a 
+            class="headingfour"
+              href="#"
+              target="_blank"
+              >Not Sure Where To Begin?</a
+            >
+          </h4>
+        </div>
+      </div>
+      <svg
+        style="background-color: #d9eee1"
+        width="100%"
+        height="70"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+      </svg>
+      
+      <div class="htmlsec py-5 sectioncontainer bg-lightblue" style="background-color: #D9EEE1 !important;;" >
+          <div class=" mx-5 d-flex flex-row justify-content-between flex-wrap" style="padding-bottom: 50px;" >
+            <div class="text-center mx-auto col-md-5 " >
+                <h1 class="sectionheading">HTML</h1>
+                <p class="sectionpara">The language for building web pages.</p>
+                <button class="btn btn-success tut-button " >Learn HTML</button>
+                <button type="button border-0" class="btn btn-primary  yellowbutton" >
+                    Video Tutorial <span class="badge bg-info text-dark rounded-pill">NEW</span>
+                </button>
+                <button class="btn blackbutton">HTML Reference</button>
+            </div>
+            <div class=" mx-auto col-md-5"> 
+                <div class="card mt-4  " style=" padding: 4rem;  card-block-main">
+                    <div class="card-body codecontainer  card-block">
+                        <h4 class="card-title codetitle   card-block-title">HTML Example:</h4>
+                        <div class="bg-light code">
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML Tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a heading.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                        </div>
+                      </div>
+                      <div class="card-footer border-0" > 
+                          <button type="button" class=" rounded-pill btn btn-success btn-lg px-4" 
+                          style="box-sizing: content-box;"
+                          >Try it Yourself</button>
+
+                      </div>
+                </div>
+            </div>
           </div>
-          <input type="submit" value="Login" />
-        </form>
+      </div>
+      <div class="js sectioncontainer bg-lightpurple" >
+        <div class="d-flex mx-5 flex-row justify-content-between flex-wrap" style="padding-bottom:50px; padding-top:50px ;  " >
+            <div class="text-center mx-auto col-md-5  " >
+                <h1 class="sectionheading" >JavaScript</h1>
+                <p class="sectionpara" >The language for programming web pages.</p>
+                <button class="btn btn-success tut-button " >Learn JavaScript</button>
+                <button class="btn blackbutton">JS Reference</button>
+            </div>
+            <div class="mx-auto col-md-5">
+                <div class=" jscard card mt-4 " style="max-width: 500px; width: 80vw; word-wrap: break-word;  ">
+                    <div class="card-body codecontainer" >
+                        <h4 class="card-title codetitle" >JS Example:</h4>
+                        <div class="bg-light code">
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="myFunction()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            Click Me!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                            <span class="jscolor" style="color:black"><br>
+                                <span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span class="jsnumbercolor" style="color:red">
+                                </span>     &nbsp; <span class="jskeywordcolor" style="color:mediumblue">let</span> x = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>);<br><span class="jsnumbercolor" style="color:red">
+                                </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">fontSize</span> = <span class="jsstringcolor" style="color:brown">"25px"</span>; <br><span class="jsnumbercolor" style="color:red">
+                                </span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">color</span> = <span class="jsstringcolor" style="color:brown">"red"</span>; <br>}<br>
+                                </span>
+                                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                        </div>
+                        </div>
+                        <div class="card-footer border-0" > 
+                            <button type="button" class=" rounded-pill btn btn-success btn-lg px-4" 
+                            style="box-sizing: content-box;"
+                            >Try it Yourself</button>
+    
+                        </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="languages container-fluid  " style="background-color: #282A35;" >
+        <div class=" row d-flex justify-content-between flex-row flex-wrap  mx-5 pt-5 pb-5 " >
+        <div class="col-md-5 card mt-4 text-center my-4 "  style="background-color: #FFC0C7;">
+          <div class="card-bodys" >
+            <h5 class="card-title languagetitle">PHP</h5>
+            <p class="card-text languagepara" >A web server programming language</p>
+            <button type="button" class="btn btn-large btn-dark roundeds-pill px-4 mt-5 contentbox">Learn PHP</button>
+          </div>
+        </div>
+        
+        <div class="col-md-5 card mt-4 text-center my-4    "  style="background-color: #FFF4A3;;" >
+          <div class="card-bodys">
+            <h5 class="card-title languagetitle">jQuery</h5>
+            <p class="card-text languagepara" >A JS library for developing web pages</p>
+            <button type="button" class="btn btn-large btn-dark roundeds-pill px-4 mt-5 contentbox" >Learn jQuery</button>
+          </div>
+        </div>
+        
+        <div class="col-md-5 card mt-4 text-center my-4 "  style="background-color: #F3ECEA;;" >
+          <div class="card-bodys">
+            <h5 class="card-title languagetitle" >JAVA</h5>
+            <p class="card-text languagepara" >A programming language</p>
+            <button type="button" class="btn btn-large btn-dark s px-4 mt-5 roundeds-pill contentbox" >Learn Java</button>
+          </div>
+        </div>
+        
+        <div class="col-md-5 card mt-4 text-center my-4 "  s>
+          <div class="card-bodys">
+            <h5 class="card-title languagetitle">Bootstrap</h5>
+            <p class="card-text languagepara" >A CSS Framework for  better pages</p>
+            <button type="button" class="btn btn-large btn-dark s px-4 mt-5  roundeds-pill contentbox" >Learn Bootstrap</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="languagecards" style="background-color: #282A35;">
+        <div class="row">
+    
+          <div class="col">
+    
+            <div class="block-body"   style="background-color: #FFC0C7;">
+    
+              <div class="block-title">
+    
+                <h5>C#</h5>
+    
+    
+    
+              </div>
+            </div>
+    
+          </div>
+          <div class="col">
+            <div class="block-body" style="background-color:#D9EEE1">
+    
+              <div class="block-title">
+                <h5>R</h5>
+    
+    
+    
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="block-body" style="background-color: #F3ECEA">
+    
+              <div class="block-title">
+                <h5>mtSql</h5>
+    
+    
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="block-body" style="background-color: #F3ECEA">
+    
+              <div class="block-title">
+                <h5>Kotlin</h5>
+    
+    
+    
+              </div>
+            </div>
+          </div>
+    
+    
+        
+       
+      </div>
+    
+    
+    
+      <div class="row">
+    
+        <div class="col">
+    
+          <div class="block-body" style="background-color: #FFF4A3">
+    
+            <div class="block-title">
+    
+              <h5>Nodejs</h5>
+    
+    
+    
+            </div>
+          </div>
+    
+        </div>
+        <div class="col">
+          <div class="block-body"    style="background-color: #FFC0C7;">
+    
+            <div class="block-title" >
+              <h5>React</h5>
+    
+    
+    
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="block-body" style="background-color: #96D4D4">
+    
+            <div class="block-title">
+              <h5>Angular</h5>
+    
+    
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="block-body" style="background-color: #04AA6D">
+    
+            <div class="block-title">
+              <h5>JSON</h5>
+    
+    
+    
+            </div>
+          </div>
+        </div>
+    
+    
+      
+     
+    </div>
+      </div>
+      <!-- </div> -->
+
+      <div class="softwares container-fluid" style="background-color: #282A35;">
+        <div class="row d-flex justify-content-between flex-row flex-wrap  mx-5 pt-5 pb-5" >
+
+            <div class="col-md-5 card text-center mx-3 my-3 bg-cream"  style="background-color: #04AA6D !important;">
+              <div class="card-body"  >
+                <h5 class="card-title techname" >Excel</h5> 
+              </div>
+            </div>
+            <div class="col-md-5 card text-center mx-3 my-3 bg-pink"  style="background-color: #D9EEE1; ">
+              <div class="card-body"  >
+                <h5 class="card-title techname" >Google Sheets</h5> 
+              </div>
+            </div>
+            <div class="col-md-5 card text-center mx-3 my-3 bg-blue " >
+              <div class="card-body" >
+                <h5 class="card-title techname" >Machine Learning</h5> 
+              </div>
+            </div>
+            <div class="col-md-5 card text-center mx-3 my-3 bg-cream" style="background-color: #FFC0C7;">
+              <div class="card-body" >
+                <h5 class="card-title techname" >Artificial Intelligence</h5> 
+              </div>
+            </div>
+        </div>
       </div>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
